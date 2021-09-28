@@ -11,7 +11,7 @@ All three approaches prompt the user to input two strings, `T` and `P`, where `T
 
 ## Naive Approach
 
-The naive approach mathes the pattern string against the other string at each index. This approach is used in the [Naive.java](./Naive.java) program.
+The naive approach mathes the pattern string against the other string at each index. This approach is used in the [Naive.java](./Java/Naive.java) program.
 
 ### Runtime Complexity
 
@@ -23,7 +23,7 @@ The `Knuth-Morris-Pratt` algorithm takes advantage of the fact that is a `mismat
 
 The `Knuth-Morris-Pratt` matcher uses a prefix table, where the entries contain the index where the matching process needs to be restarted in case of a mismatch. The `qth` element in the prefix table for the string `P` is defined to be the length of the longes prefix of `P[:q + 1]` that is also a proper suffix of `P[:q + 1]`.
 
-The `Knuth-Morris-Pratt` algorithm is implemented in the [KnuthMorrisPratt.java](./KnuthMorrisPratt.java) file.
+The `Knuth-Morris-Pratt` algorithm is implemented in the [KnuthMorrisPratt.java](./Java/KnuthMorrisPratt.java) file.
 
 ### Runtime Complexity
 
@@ -33,7 +33,7 @@ Assuming the prefix table is already precomputed, the `Knuth-Morris-Pratt` algor
 
 The `Boyer-Moore-Horspool` algorithm uses the alphabet from the `T` string and `P` pattern to skip large distances. The comparisons start from the `end` of the pattern.
 
-The `Boyer-Moore-Horspool` algorithm is implemented in the [BoyerMooreHorspool.java](./BoyerMooreHorspool.java) file.
+The `Boyer-Moore-Horspool` algorithm is implemented in the [BoyerMooreHorspool.java](./Java/BoyerMooreHorspool.java) file.
 
 ### Runtime Complexity
 
