@@ -8,4 +8,4 @@ The example programs have been written using `Java`.
 
 | Topic              | Link           |
 | ------------------ | -------------- |
-| String Matching    | [here](./Java/stringmatchin)               |
+| String Matching    | [here](./Java/stringmatching)               |
