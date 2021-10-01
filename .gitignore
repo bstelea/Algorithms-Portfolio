@@ -1,1 +1,4 @@
 *.class
+.vscode
+a.out
+*.o
